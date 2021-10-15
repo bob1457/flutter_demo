@@ -12,14 +12,14 @@ class FoodData {
         4.0,
         "325 cal",
         12,
-        19.99,
+        9.99,
         [
           {"noodele": "assets/images/noodles.png"},
           {"eggs": "assets/images/eggs.png"},
           {"shrimps": "assets/images/shrimps.png"},
           {"tomatos": "assets/images/tomators.png"},
         ],
-        "Janpanese style nodle soup",
+        "Janpanese style nodle soup, Janpanese style nodle soup, Janpanese style nodle soupJanpanese style nodle soupJanpanese style nodle soupJanpanese style nodle soupJanpanese style nodle soupJanpanese style nodle soup",
       ),
       Food(
         "assets/images/dish2.png",

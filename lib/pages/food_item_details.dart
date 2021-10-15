@@ -14,23 +14,61 @@ class FoodItemDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: kPrimaryColor,
-        body: SingleChildScrollView(
-          child: Column(
+      backgroundColor: kPrimaryColor,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+                padding: EdgeInsets.only(
+              top: 10,
+            )),
+            CustomAppBar(
+              Icons.arrow_back_ios_outlined,
+              Icons.favorite_outline,
+              leftCallback: () => Navigator.of(context).pop(),
+            ),
+            FoodImgBanner(food),
+            FoodDetails(food),
+          ],
+        ),
+      ),
+      floatingActionButton: Container(
+        height: 50,
+        width: 100,
+        child: RawMaterialButton(
+          fillColor: kPrimaryColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          elevation: 2,
+          onPressed: () {},
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const Padding(
-                  padding: EdgeInsets.only(
-                top: 10,
-              )),
-              CustomAppBar(
-                Icons.arrow_back_ios_outlined,
-                Icons.favorite_outline,
-                leftCallback: () => Navigator.of(context).pop(),
+              Icon(
+                Icons.shopping_bag_outlined,
+                color: Colors.black,
+                size: 30,
               ),
-              FoodImgBanner(food),
-              FoodDetails(food),
+              Container(
+                padding: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Text(
+                  food.quantity.toString(),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
             ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

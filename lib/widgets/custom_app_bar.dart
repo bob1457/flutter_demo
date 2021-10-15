@@ -35,7 +35,10 @@ class CustomAppBar extends StatelessWidget {
         shape: BoxShape.circle,
         color: Colors.white,
       ),
-      child: Icon(icon),
+      child: Icon(
+        icon,
+        // color: Colors.red,
+      ),
     );
   }
 }

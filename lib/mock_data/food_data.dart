@@ -13,6 +13,12 @@ class FoodData {
         "325 cal",
         12,
         19.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style nodle soup",
       ),
       Food(
@@ -24,6 +30,12 @@ class FoodData {
         "225 cal",
         5,
         14.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style rise bowl",
       ),
       Food(
@@ -35,6 +47,12 @@ class FoodData {
         "325 cal",
         12,
         19.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style nodle soup",
       ),
       Food(
@@ -46,6 +64,12 @@ class FoodData {
         "325 cal",
         12,
         19.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style nodle soup",
       ),
       Food(
@@ -57,6 +81,12 @@ class FoodData {
         "325 cal",
         12,
         19.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style nodle soup",
       ),
     ];
@@ -73,6 +103,12 @@ class FoodData {
         "325 cal",
         12,
         19.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style nodle soup",
       ),
       Food(
@@ -84,6 +120,12 @@ class FoodData {
         "225 cal",
         5,
         14.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style rise bowl",
       ),
       Food(
@@ -95,6 +137,12 @@ class FoodData {
         "325 cal",
         12,
         19.99,
+        [
+          {"noodele": "assets/images/noodles.png"},
+          {"eggs": "assets/images/eggs.png"},
+          {"shrimps": "assets/images/shrimps.png"},
+          {"tomatos": "assets/images/tomators.png"},
+        ],
         "Janpanese style nodle soup",
       ),
     ];

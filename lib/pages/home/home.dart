@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/home/home_header.dart';
 import 'package:flutter_app/pages/home/search_card.dart';
+import 'package:flutter_app/pages/home/tag_list.dart';
 
 class Home extends StatelessWidget {
   // const Home({Key? key}) : super(key: key);
@@ -22,6 +23,7 @@ class Home extends StatelessWidget {
               children: [
                 HomeHeader(),
                 SearchCard(),
+                TagList(),
               ],
             )
           ],

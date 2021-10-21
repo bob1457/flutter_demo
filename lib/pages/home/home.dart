@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/home/home_header.dart';
 import 'package:flutter_app/pages/home/search_card.dart';
 import 'package:flutter_app/pages/home/tag_list.dart';
+import 'package:flutter_app/widgets/job_list.dart';
 
 class Home extends StatelessWidget {
   // const Home({Key? key}) : super(key: key);
@@ -24,8 +25,64 @@ class Home extends StatelessWidget {
                 HomeHeader(),
                 SearchCard(),
                 TagList(),
+                JobList(),
               ],
             )
+          ],
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.purple,
+      ),
+      bottomNavigationBar: Theme(
+        data: ThemeData(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+        ),
+        child: BottomNavigationBar(
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          selectedItemColor: Theme.of(context).primaryColor,
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(
+                Icons.home,
+                size: 20,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: 'Case',
+              icon: Icon(
+                Icons.cases_outlined,
+                size: 20,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: '',
+              icon: Text(''),
+            ),
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(
+                Icons.home,
+                size: 20,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(
+                Icons.home,
+                size: 20,
+              ),
+            ),
           ],
         ),
       ),

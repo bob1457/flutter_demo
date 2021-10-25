@@ -40,51 +40,55 @@ class Home extends StatelessWidget {
         ),
         backgroundColor: Colors.purple,
       ),
-      bottomNavigationBar: Theme(
-        data: ThemeData(
-          splashColor: Colors.transparent,
-          highlightColor: Colors.transparent,
-        ),
-        child: BottomNavigationBar(
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          selectedItemColor: Theme.of(context).primaryColor,
-          type: BottomNavigationBarType.fixed,
-          items: [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(
-                Icons.home,
-                size: 20,
-              ),
+      bottomNavigationBar: _buildBottomNavBar(context),
+    );
+  }
+
+  Widget _buildBottomNavBar(BuildContext context) {
+    return Theme(
+      data: ThemeData(
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+      ),
+      child: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        selectedItemColor: Theme.of(context).primaryColor,
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Icon(
+              Icons.home,
+              size: 20,
             ),
-            BottomNavigationBarItem(
-              label: 'Case',
-              icon: Icon(
-                Icons.cases_outlined,
-                size: 20,
-              ),
+          ),
+          BottomNavigationBarItem(
+            label: 'Case',
+            icon: Icon(
+              Icons.cases_outlined,
+              size: 20,
             ),
-            BottomNavigationBarItem(
-              label: '',
-              icon: Text(''),
+          ),
+          BottomNavigationBarItem(
+            label: '',
+            icon: Text(''),
+          ),
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Icon(
+              Icons.home,
+              size: 20,
             ),
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(
-                Icons.home,
-                size: 20,
-              ),
+          ),
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Icon(
+              Icons.home,
+              size: 20,
             ),
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(
-                Icons.home,
-                size: 20,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

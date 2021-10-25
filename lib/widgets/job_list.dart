@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/models/job.dart';
 import 'package:flutter_app/widgets/job_item.dart';
 
+import 'job_details.dart';
+
 class JobList extends StatelessWidget {
   final jobList = Job.listedJobs();
   @override
@@ -14,8 +16,18 @@ class JobList extends StatelessWidget {
         height: 160,
         child: ListView.separated(
             scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) => JobItem(
-                  jobList[index],
+            itemBuilder: (context, index) => GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                      // backgroundColor: Colors.white, //.withOpacity(0.5),
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (context) => jobDetails(jobList[index]),
+                    );
+                  },
+                  child: JobItem(
+                    jobList[index],
+                  ),
                 ),
             separatorBuilder: (_, index) => SizedBox(
                   width: 15,

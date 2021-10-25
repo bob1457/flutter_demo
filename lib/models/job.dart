@@ -91,6 +91,9 @@ class Job {
         [
           "Create and design consumer digital products",
           "with innovative pattern, integrating exsting features and fucntions",
+          "from other productionline",
+          "Create and design consumer digital products",
+          "with innovative pattern, integrating exsting features and fucntions",
           "from other productionline"
         ],
       ),

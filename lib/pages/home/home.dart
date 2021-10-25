@@ -19,14 +19,16 @@ class Home extends StatelessWidget {
         child: Stack(
           children: [
             _buildBackground(),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                HomeHeader(),
-                SearchCard(),
-                TagList(),
-                JobList(),
-              ],
+            SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  HomeHeader(),
+                  SearchCard(),
+                  TagList(),
+                  JobList(),
+                ],
+              ),
             )
           ],
         ),

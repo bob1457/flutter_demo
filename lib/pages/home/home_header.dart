@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/search/search.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({Key? key}) : super(key: key);
@@ -46,10 +47,16 @@ class HomeHeader extends StatelessWidget {
                 ),
                 transform: Matrix4.rotationZ(100),
                 child: Stack(children: [
-                  Icon(
-                    Icons.notifications_none_outlined,
-                    size: 30,
-                    color: Colors.grey,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Search()));
+                    },
+                    child: Icon(
+                      Icons.notifications_none_outlined,
+                      size: 30,
+                      color: Colors.grey,
+                    ),
                   ),
                   Positioned(
                     top: 0,

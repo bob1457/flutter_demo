@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/search/search_app_bar.dart';
 import 'package:flutter_app/pages/search/search_input.dart';
+import 'package:flutter_app/pages/search/search_list.dart';
 import 'package:flutter_app/pages/search/search_option.dart';
 
 class Search extends StatelessWidget {
@@ -40,6 +41,7 @@ class Search extends StatelessWidget {
                 SearchAppBar(),
                 SearchInput(),
                 SearchOption(),
+                Expanded(child: SearchList()),
               ],
             )
           ],
